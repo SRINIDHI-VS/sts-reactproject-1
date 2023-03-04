@@ -1,0 +1,40 @@
+@import "./Color.scss";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  position: sticky;
+  align-items: center;
+  background-color: rgb(10, 4, 54);
+  top: 0;
+  z-index: 10;
+  opacity: 0.9;
+
+  > h1 {
+    color: $first;
+    text-shadow: 2px 2px 2px black;
+    font-family: $text1;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  > main {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    align-items: center;
+
+    > a {
+      color: $first;
+      margin: 1rem;
+      font-weight: 600;
+      font-size: 1.3rem;
+
+      &:hover {
+        color: $third;
+      }
+    }
+  }
+}
